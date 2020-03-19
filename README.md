@@ -6,7 +6,7 @@ date: 2020/03/19 20:34:10
 lang: en-US
 author: ["Linux-Fan, Ma_Sys.ma (Ma_Sys.ma@web.de)"]
 keywords: ["scanimgrename", "ma_scanner", "mdvl", "scanner", "ocr"]
-x-masysma-version: 1.0.0
+x-masysma-version: 1.0.1
 x-masysma-repository: https://www.github.com/m7a/bp-scanning
 x-masysma-website: https://masysma.lima-city.de/32/scanning.xhtml
 x-masysma-owned: 1
@@ -171,7 +171,7 @@ Here are the links to the script's dependencies. Most of them are optional for
 one of the ways described above, see their documentation to find out what they
 are useful for:
 
-[convert(1)](https://manpages.debian.org/buster/imagemagick/convert.1.en.html)
+[convert(1)](https://manpages.debian.org/buster/imagemagick-6.q16/convert-im6.q16.1.en.html)
 [gimp(1)](https://manpages.debian.org/buster/gimp/gimp.1.en.html)
 [parallel(1)](https://manpages.debian.org/buster/parallel/parallel.1.en.html)
 [pdfimages(1)](https://manpages.debian.org/buster/poppler-utils/pdfimages.1.en.html)
