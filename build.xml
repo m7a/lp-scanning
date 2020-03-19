@@ -6,7 +6,6 @@
 <property name="mdpc.section"    value="graphics"/>
 <property name="mdpc.descrs"     value="Workflow-tools for performing (mass) document scans"/>
 <property name="mdpc.arch"       value="all"/>
-<!-- recommends, because you can still use DirStat 1 without Postgres Lib -->
 <property name="mdpc.recommends" value="default-jre, sane-utils, tesseract-ocr, poppler-utils, imagemagick"/>
 <property name="mdpc.depends"    value="parallel, gimp"/>
 <property name="mdpc.descrl">
