@@ -1,0 +1,5 @@
+mdvl-scanning (1.0.0) stable; urgency=medium
+
+  * Package created with MDPC 2
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Thu, 19 Mar 2020 20:32:41 +0100

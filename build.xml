@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="build">
+<project default="jar">
+
+<!-- APPLICATION METADATA -->
+<property name="mdpc.name"       value="mdvl-scanning"/>
+<property name="mdpc.section"    value="graphics"/>
+<property name="mdpc.descrs"     value="Workflow-tools for performing (mass) document scans"/>
+<property name="mdpc.arch"       value="all"/>
+<!-- recommends, because you can still use DirStat 1 without Postgres Lib -->
+<property name="mdpc.recommends" value="default-jre, sane-utils, tesseract-ocr, poppler-utils, imagemagick"/>
+<property name="mdpc.depends"    value="parallel, gimp"/>
+<property name="mdpc.descrl">
+ Contains `scanimgrename` to rename files and `ma_scanner2` to invoke and/or
+ process scans. Both tools are intended to integrate into scanning many
+ (say 400) documents at once.
+ See documentation scanning(32) for further details.
+</property>
+
+<property name="mdpc.file.install">
+scanimgrename.jar /usr/share/java
+scanimgrename /usr/bin
+ma_scanner2 /usr/bin
+</property>
 
 <!-- APPLICATION METADATA -->
 <property name="masysma.target" value="scanimgrename"/> 

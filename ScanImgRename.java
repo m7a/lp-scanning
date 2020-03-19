@@ -1,3 +1,6 @@
+// Ma_Sys.ma ScanImgRename, Copyright (c) 2019 Ma_Sys.ma.
+// For further info send an e-mail to Ma_Sys.ma@web.de.
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;

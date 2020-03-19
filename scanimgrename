@@ -1,0 +1,2 @@
+#!/bin/sh -e
+exec java -cp /usr/share/java/scanimgrename.jar ScanImgRename "$@"
