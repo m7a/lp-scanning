@@ -7,7 +7,7 @@ lang: en-US
 author: ["Linux-Fan, Ma_Sys.ma (Ma_Sys.ma@web.de)"]
 keywords: ["scanimgrename", "ma_scanner", "mdvl", "scanner", "ocr"]
 x-masysma-version: 1.0.1
-x-masysma-repository: https://www.github.com/m7a/bp-scanning
+x-masysma-repository: https://github.com/m7a/lp-scanning
 x-masysma-website: https://masysma.lima-city.de/32/scanning.xhtml
 x-masysma-owned: 1
 x-masysma-copyright: |
