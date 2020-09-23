@@ -1,4 +1,4 @@
-// Ma_Sys.ma ScanImgRename, Copyright (c) 2019 Ma_Sys.ma.
+// Ma_Sys.ma ScanImgRename 1.1, Copyright (c) 2019, 2020 Ma_Sys.ma.
 // For further info send an e-mail to Ma_Sys.ma@web.de.
 
 import javax.swing.*;
@@ -34,12 +34,24 @@ public class ScanImgRename extends JFrame {
 						curnam.getText())) {
 					curnam.setText("");
 					nextImage();
+				} else {
+					top.repaint();
 				}
 			}
 		});
 		bot.add(curnam);
 		cp.add("South", bot);
-		top = new JLabel("...");
+		top = new JLabel("...") {
+			@Override
+			public void paintComponent(Graphics g) {
+				super.paintComponent(g);
+
+				g.setColor(Color.BLUE);
+				g.setFont(new Font(Font.MONOSPACED, Font.BOLD,
+									36));
+				g.drawString(curnam.getText(), 100, 100);
+			}
+		};
 		cp.add("Center", new JScrollPane(top));
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);

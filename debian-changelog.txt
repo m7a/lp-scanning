@@ -1,3 +1,10 @@
+mdvl-scanning (1.0.1) stable; urgency=medium
+
+  * Display new name/number as you type in large font and on the image under
+    consideration.
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Wed, 23 Sep 2020 23:20:12 +0200
+
 mdvl-scanning (1.0.0) stable; urgency=medium
 
   * Package created with MDPC 2
