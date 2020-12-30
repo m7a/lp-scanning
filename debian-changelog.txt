@@ -1,3 +1,9 @@
+mdvl-scanning (1.0.2) stable; urgency=medium
+
+  * Add trigger for CI integration.
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Thu, 31 Dec 2020 00:44:15 +0100
+
 mdvl-scanning (1.0.1) stable; urgency=medium
 
   * Display new name/number as you type in large font and on the image under
