@@ -1,3 +1,10 @@
+mdvl-scanning (1.0.3) stable; urgency=medium
+
+  * Change behaviour of ScanImgRename to interactively allow resolving rename
+    conflicts.
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Sat, 08 Jan 2022 22:05:37 +0100
+
 mdvl-scanning (1.0.2) stable; urgency=medium
 
   * Add trigger for CI integration.

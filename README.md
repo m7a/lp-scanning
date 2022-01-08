@@ -6,7 +6,7 @@ date: 2020/03/19 20:34:10
 lang: en-US
 author: ["Linux-Fan, Ma_Sys.ma (Ma_Sys.ma@web.de)"]
 keywords: ["scanimgrename", "ma_scanner", "mdvl", "scanner", "ocr"]
-x-masysma-version: 1.0.1
+x-masysma-version: 1.2.0
 x-masysma-repository: https://github.com/m7a/lp-scanning
 x-masysma-website: https://masysma.lima-city.de/32/scanning.xhtml
 x-masysma-owned: 1
@@ -111,9 +111,11 @@ a suitable number of zeroes if it is less than six digits. Upon pressing
 processed all files, the interface closes.
 
 In case a file with the target file name already exists, pressing [ENTER] will
-not do anything. By not showing the next document, nor closing the interface,
-the program signals the user to take action and check what file is preventing
-the currently processed file from being renamed.
+save the file name to a stack and turn to the already existing file under the
+assumption that that file might have been mis-named. `scanimage` indicates this
+mode by showing the number being entered in red as opposed to the regular blue
+color. Once the rename conflict has been resolved, the color will turn blue
+again.
 
 ## Configuration
 
