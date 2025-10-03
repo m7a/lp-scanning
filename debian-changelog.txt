@@ -1,3 +1,9 @@
+mdvl-scanning (1.0.4) stable; urgency=medium
+
+  * Adjust GIMP script syntax to GIMP v3.x
+
+ -- Ma_Sys.ma Linux-Fan <info@masysma.net>  Fri, 03 Oct 2025 19:58:51 +0200
+
 mdvl-scanning (1.0.3) stable; urgency=medium
 
   * Change behaviour of ScanImgRename to interactively allow resolving rename

@@ -1,6 +1,6 @@
 #!/bin/sh -e
-# Ma_Sys.ma Scanning Helper Script 3.2.0,
-# Copyright (c) 2013, 2019, 2020 Ma_Sys.ma.
+# Ma_Sys.ma Scanning Helper Script 3.2.1,
+# Copyright (c) 2013, 2019, 2020, 2025 Ma_Sys.ma.
 # For further info send an e-mail to Ma_Sys.ma@web.de.
 
 NUMBER_FILE=scan_number.txt
@@ -104,16 +104,15 @@ process_parallel_sub() {
 # $2 output filename (suggested)
 # $3 OCRYN setting
 perform_indexed_conversion() {
-	gimp -n -i -d -f -b - > /dev/null 2> /dev/null <<EOF
-(let* ((infile "$1") (image 0) (layer 0) (filename "$2"))
+	gimp --quit --batch-interpreter=plug-in-script-fu-eval \
+						-c -n -i -d -f -b - <<EOF
+(let*	((infile "$1") (image 0))
 	(set! image (car (gimp-file-load RUN-NONINTERACTIVE infile infile)))
-	(gimp-image-convert-indexed image NO-DITHER MAKE-PALETTE $IND FALSE
-									TRUE "")
-	(set! layer (car (gimp-image-merge-visible-layers image CLIP-TO-IMAGE)))
-	(gimp-file-save RUN-NONINTERACTIVE image layer filename filename)
+	(gimp-image-convert-indexed image CONVERT-DITHER-NONE
+				CONVERT-PALETTE-GENERATE 8 FALSE TRUE "")
+	(gimp-file-save RUN-NONINTERACTIVE image "$2")
 	(gimp-image-delete image)
-	(gimp-quit 0)
-)
+	(gimp-quit 0))
 EOF
 	if [ "$3" = Y ]; then
 		fid="$(tesseract "$2" stdout 2> /dev/null | sed -n 's/^\(.*[^0-9]\|\)\([0-9]\{6\}\)\(\|[^0-9].*\)$/\2/gp' | head -n 1)"
